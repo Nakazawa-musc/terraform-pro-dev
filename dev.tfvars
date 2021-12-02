@@ -1,4 +1,5 @@
 key_name = "dev-key-pair"
+key_pair = "ssh-rsa dYziEuPAiKDxkGW6eB7mvg63Y4M3"
 key_pair_tags = {
   Created     = "Terraform"
   Environment = "development"

@@ -49,8 +49,14 @@ variable "key_name" {
   default     = "keyPair"
 }
 
-variable "key_pair_tags" {
+variable "key_pair" {
   description = "The password of instance."
+  type        = string
+  default     = "keyPair"
+}
+
+variable "key_pair_tags" {
+  description = "The tags of instance."
   type        = map(string)
   default = {
     Created     = "Terraform"
