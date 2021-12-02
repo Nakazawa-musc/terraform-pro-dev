@@ -90,6 +90,7 @@ resource "alicloud_slb_server_certificate" "slb_server_cert" {
   name               = var.slb_server_cert_name
   server_certificate = var.slb_server_cert_certificate
   private_key        = var.slb_server_cert_privatekey
+  resource_group_id  = alicloud_resource_manager_resource_group.idp-rg.id
 }
 
 // ロードバランサーリスナー
